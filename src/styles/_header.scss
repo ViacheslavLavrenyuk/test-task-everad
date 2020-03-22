@@ -1,51 +1,82 @@
 .header {
-  height: 765px;
-  background-image: url("../images/header.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  line-height: 1;
+  height: 720px;
+  background-image: url("../images/header-bg.jpg");
 
-  &__nav {
+  &__product-name {
     position: absolute;
-    bottom: 25px;
-    left: 0;
+    top: 18px;
+    left: 82px;
+    margin: 0;
+  }
+
+  &__navigation {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
     right: 0;
   }
 
-  &__top {
-    display: flex;
+  &__info {
+    max-width: 500px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: $main-color;
+    margin: 50px 0 15px;
+    line-height: 1.1;
+  }
+
+  &__description {
+    font-size: 34px;
+    font-weight: 500;
+    color: $product-color;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__list {
+    padding: 10px 0 0 16px;
+  }
+
+  &__list-item {
+    font-size: 20px;
+    font-weight: 500;
+    color: $main-color;
+    list-style-image: url("../images/ul-icon.png");
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  &__main-photo {
     position: absolute;
-    top: 35px;
-    left: calc(50% - #{$logo-width / 2});
-    color: #fff;
-
-    @include direction-column;
+    top: 12px;
+    left: 400px;
   }
 
-  &__phone {
-    margin: 0 82px;
-
-    @media screen and (max-width: $small-screen-break-point) {
-      margin: -30px 0 10px;
-    }
+  &__input-group {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
-  &__phone,
-  &__action {
-    position: relative;
-    top: 47px;
+  &__icon {
+    position: absolute;
+    padding: 15px;
   }
 
-  &__link {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    transition: color $hover-duration;
-    text-transform: uppercase;
+  &__input {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 10px 15px 50px;
+    border-radius: 5px;
+    border: 1px solid #b5c1de;
+    box-sizing: border-box;
+  }
 
-    &:hover {
-      color: $active-color;
-    }
+  &__input::placeholder {
+    color: #a6aebb;
+    font-size: 18px;
   }
 }

@@ -1,0 +1,28 @@
+.product {
+  height: 340px;
+  background-image: url("../images/product-bg.jpg");
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $main-color;
+  }
+
+  &__image {
+    margin-top: -20px;
+  }
+
+  &__title {
+    font-size: 60px;
+    margin: 30px 0 25px;
+  }
+
+  &__name {
+    color: #5774b8;
+  }
+
+  &__description {
+    font-size: 26px;
+    margin: 0 0 20px;
+  }
+}

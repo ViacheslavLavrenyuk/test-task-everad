@@ -1,0 +1,86 @@
+.symptoms {
+  padding: 90px 0;
+  color: $second-color;
+
+  &__header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+
+    &--selection {
+      color: $third-color;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/man-bg.png");
+    background-size: 80%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    margin-bottom: 30px;
+  }
+
+  &__list-content {
+    margin-left: 20px;
+  }
+
+  &__list-content-header {
+    font-size: 32px;
+    margin: 0 0 10px;
+  }
+
+  &__list-content-text {
+    font-size: 20px;
+    color: #7e7c89;
+    margin: 0;
+  }
+
+  &__list-icon {
+    margin: 10px;
+  }
+
+  &__list-img {
+    border: 1px solid $third-color;
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &__attencion {
+    margin-top: 90px;
+    font-size: 26px;
+    font-weight: 500;
+    color: $main-color;
+  }
+
+  &__attencion::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 3px solid #e5f2fa;
+    width: 140px;
+    transform: translateY(-2rem);
+  }
+
+  &__attencion-img {
+    margin-top: 90px;
+  }
+
+  &__list:last-child .symptoms__list-icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 3px solid #b9cfdd;
+    width: 70px;
+    transform: translateY(3rem);
+  }
+}

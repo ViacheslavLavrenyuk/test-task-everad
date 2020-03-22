@@ -1,0 +1,16 @@
+.navigation {
+  font-size: 18px;
+  z-index: 1;
+
+  &__link {
+    margin-left: 40px;
+    color: $main-color;
+    transition: $hover-duration;
+    border-bottom: 1px $main-color dashed;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: #6d6d6d;
+  }
+}

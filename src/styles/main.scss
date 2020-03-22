@@ -1,20 +1,24 @@
-@import "reset";
-@import "vars";
-@import "mixins";
-@import "logo";
-@import "nav";
+@import "./utils/vars";
 @import "header";
-@import "section";
-@import "info";
-@import "link";
-@import "heading";
-@import "photos";
-@import "gallery";
+@import "wrapper";
+@import "navigation";
+@import "card";
 @import "button";
-@import "consultation";
-@import "form";
-@import "input";
-@import "testimonials";
-@import "person";
-@import "contact";
-@import "footer";
+@import "symptoms";
+@import "product";
+@import "composition";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-name {
+  color: $product-color;
+  font-size: 60px;
+  font-weight: 700;
+}

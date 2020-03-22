@@ -1,0 +1,41 @@
+.composition {
+  margin: 70px 0;
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__title {
+    color: $second-color;
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 230px;
+    margin: 20px;
+  }
+
+  &__card-title {
+    color: $second-color;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e0e9ee;
+  }
+
+  &__card-text {
+    color: #8e8c95;
+    font-size: 18px;
+  }
+}
