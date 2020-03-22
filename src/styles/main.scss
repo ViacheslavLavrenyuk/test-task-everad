@@ -21,4 +21,10 @@ body {
   color: $product-color;
   font-size: 60px;
   font-weight: 700;
+
+  @media (max-width: $small-screen-break-point) {
+    font-size: 36px;
+    position: absolute;
+    left: 110px;
+  }
 }

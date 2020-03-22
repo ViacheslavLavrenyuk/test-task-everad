@@ -6,9 +6,19 @@
   top: 160px;
   right: 0;
   padding: 25px;
+  margin: 0 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  @media (max-width: $medium-screen-break-point) {
+    position: initial;
+    margin: 40px auto;
+  }
+
+  @media (max-width: $small-screen-break-point) {
+    margin: 30px auto;
+  }
 
   &__header {
     font-size: 28px;

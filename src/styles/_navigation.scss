@@ -1,6 +1,15 @@
 .navigation {
   font-size: 18px;
   z-index: 1;
+  margin: 0 20px;
+
+  @media (max-width: $medium-screen-break-point) {
+    margin: 0;
+  }
+
+  @media (max-width: $small-screen-break-point) {
+    font-size: 14px;
+  }
 
   &__link {
     margin-left: 40px;
@@ -8,6 +17,14 @@
     transition: $hover-duration;
     border-bottom: 1px $main-color dashed;
     text-decoration: none;
+
+    @media (max-width: $medium-screen-break-point) {
+      margin: 0 15px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      margin: 0 5px;
+    }
   }
 
   &__link:hover {

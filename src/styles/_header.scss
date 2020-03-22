@@ -1,12 +1,49 @@
 .header {
   height: 720px;
   background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $medium-screen-break-point) {
+    height: 1020px;
+  }
+
+  @media (max-width: $small-screen-break-point) {
+    height: 940px;
+  }
+
+  &__logo {
+    @media (max-width: $medium-screen-break-point) {
+      position: absolute;
+      left: 40px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      left: 20px;
+    }
+  }
 
   &__product-name {
     position: absolute;
     top: 18px;
     left: 82px;
     margin: 0;
+
+    @media (max-width: $medium-screen-break-point) {
+      display: inline-block;
+      margin-left: 20px;
+      top: 0;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      margin-left: -30px;
+    }
+  }
+
+  &__logo-link {
+    @media (max-width: $medium-screen-break-point) {
+      text-align: center;
+    }
   }
 
   &__navigation {
@@ -14,11 +51,26 @@
     position: absolute;
     top: 25px;
     right: 0;
+
+    @media (max-width: $medium-screen-break-point) {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 80px 0 0;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      padding: 84px 0 0;
+    }
   }
 
   &__info {
     max-width: 500px;
     z-index: 2;
+
+    @media (max-width: $medium-screen-break-point) {
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -27,6 +79,14 @@
     color: $main-color;
     margin: 50px 0 15px;
     line-height: 1.1;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      font-size: 36px;
+    }
   }
 
   &__description {
@@ -35,6 +95,14 @@
     color: $product-color;
     margin: 0;
     line-height: 1;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      font-size: 24px;
+    }
   }
 
   &__list {
@@ -54,6 +122,10 @@
     position: absolute;
     top: 12px;
     left: 400px;
+
+    @media (max-width: $big-screen-break-point) {
+      display: none;
+    }
   }
 
   &__input-group {

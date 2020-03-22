@@ -2,10 +2,18 @@
   padding: 90px 0;
   color: $second-color;
 
+  @media (max-width: $small-screen-break-point) {
+    padding: 40px 0;
+  }
+
   &__header {
     text-align: center;
     font-size: 50px;
     font-weight: 700;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 40px;
+    }
 
     &--selection {
       color: $third-color;
@@ -19,6 +27,10 @@
     background-size: 80%;
     background-position: top right;
     background-repeat: no-repeat;
+
+    @media (max-width: $medium-screen-break-point) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__list {
@@ -34,12 +46,24 @@
   &__list-content-header {
     font-size: 32px;
     margin: 0 0 10px;
+
+    @media (max-width: $big-screen-break-point) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 22px;
+    }
   }
 
   &__list-content-text {
     font-size: 20px;
     color: #7e7c89;
     margin: 0;
+
+    @media (max-width: $big-screen-break-point) {
+      font-size: 16px;
+    }
   }
 
   &__list-icon {
@@ -60,6 +84,14 @@
     font-size: 26px;
     font-weight: 500;
     color: $main-color;
+
+    @media (max-width: $big-screen-break-point) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 20px;
+    }
   }
 
   &__attencion::before {
@@ -82,5 +114,11 @@
     border-top: 3px solid #b9cfdd;
     width: 70px;
     transform: translateY(3rem);
+  }
+
+  &__picture {
+    @media (max-width: $medium-screen-break-point) {
+      display: none;
+    }
   }
 }
