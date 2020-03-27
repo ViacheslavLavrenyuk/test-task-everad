@@ -1,51 +1,154 @@
 .header {
-  height: 765px;
-  background-image: url("../images/header.jpg");
+  height: 720px;
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  line-height: 1;
 
-  &__nav {
+  @media (max-width: $medium-screen-break-point) {
+    height: 1020px;
+  }
+
+  @media (max-width: $small-screen-break-point) {
+    height: 940px;
+  }
+
+  &__logo {
+    @media (max-width: $medium-screen-break-point) {
+      position: absolute;
+      left: 40px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      left: 20px;
+    }
+  }
+
+  &__product-name {
     position: absolute;
-    bottom: 25px;
-    left: 0;
+    top: 18px;
+    left: 82px;
+    margin: 0;
+
+    @media (max-width: $medium-screen-break-point) {
+      display: inline-block;
+      margin-left: 20px;
+      top: 0;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      margin-left: -30px;
+    }
+  }
+
+  &__logo-link {
+    @media (max-width: $medium-screen-break-point) {
+      text-align: center;
+    }
+  }
+
+  &__navigation {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
     right: 0;
+
+    @media (max-width: $medium-screen-break-point) {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 80px 0 0;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      padding: 84px 0 0;
+    }
   }
 
-  &__top {
-    display: flex;
+  &__info {
+    max-width: 500px;
+    z-index: 2;
+
+    @media (max-width: $medium-screen-break-point) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: $main-color;
+    margin: 50px 0 15px;
+    line-height: 1.1;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 48px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 34px;
+    font-weight: 500;
+    color: $product-color;
+    margin: 0;
+    line-height: 1;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    padding: 10px 0 0 16px;
+  }
+
+  &__list-item {
+    font-size: 20px;
+    font-weight: 500;
+    color: $main-color;
+    list-style-image: url("../images/ul-icon.png");
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  &__main-photo {
     position: absolute;
-    top: 35px;
-    left: calc(50% - #{$logo-width / 2});
-    color: #fff;
+    top: 12px;
+    left: 400px;
 
-    @include direction-column;
-  }
-
-  &__phone {
-    margin: 0 82px;
-
-    @media screen and (max-width: $small-screen-break-point) {
-      margin: -30px 0 10px;
+    @media (max-width: $big-screen-break-point) {
+      display: none;
     }
   }
 
-  &__phone,
-  &__action {
-    position: relative;
-    top: 47px;
+  &__input-group {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
-  &__link {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    transition: color $hover-duration;
-    text-transform: uppercase;
+  &__icon {
+    position: absolute;
+    padding: 15px;
+  }
 
-    &:hover {
-      color: $active-color;
-    }
+  &__input {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 10px 15px 50px;
+    border-radius: 5px;
+    border: 1px solid #b5c1de;
+    box-sizing: border-box;
+  }
+
+  &__input::placeholder {
+    color: #a6aebb;
+    font-size: 18px;
   }
 }

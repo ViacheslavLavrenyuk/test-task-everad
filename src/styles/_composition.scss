@@ -1,0 +1,75 @@
+.composition {
+  margin: 70px 0;
+
+  @media (max-width: $small-screen-break-point) {
+    margin: 40px 0;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $big-screen-break-point) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    color: $second-color;
+    font-size: 52px;
+    margin-bottom: 40px;
+
+    @media (max-width: $medium-screen-break-point) {
+      font-size: 44px;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      font-size: 32px;
+    }
+  }
+
+  &__img {
+    text-align: center;
+
+    @media (max-width: $big-screen-break-point) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $big-screen-break-point) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $small-screen-break-point) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  &__card {
+    max-width: 230px;
+    margin: 20px;
+
+    @media (max-width: $medium-screen-break-point) {
+      margin: 0 20px;
+    }
+  }
+
+  &__card-title {
+    color: $second-color;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e0e9ee;
+  }
+
+  &__card-text {
+    color: #8e8c95;
+    font-size: 18px;
+  }
+}

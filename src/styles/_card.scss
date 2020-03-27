@@ -1,0 +1,101 @@
+.card {
+  max-width: 290px;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  padding: 25px;
+  margin: 0 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  @media (max-width: $medium-screen-break-point) {
+    position: initial;
+    margin: 40px auto;
+    max-width: 390px;
+  }
+
+  @media (max-width: $small-screen-break-point) {
+    margin: 30px auto;
+  }
+
+  &__header {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5774b8;
+    margin: 0 0 10px;
+    line-height: 1.1;
+  }
+
+  &__price {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  &__ceil {
+    padding: 0 5px;
+    position: relative;
+    vertical-align: bottom;
+    height: 70px;
+  }
+
+  &__ceil:first-child {
+    border-right: 1px solid #d9ecf2;
+    padding-right: 15px;
+  }
+
+  &__ceil:last-child {
+    padding-left: 15px;
+  }
+
+  &__old-price {
+    font-size: 13px;
+    color: #737e96;
+    margin: 0;
+    position: absolute;
+    top: 0;
+
+    &--currency {
+      font-size: 16px;
+      color: #737e96;
+    }
+
+    &--value {
+      font-size: 28px;
+      height: 28px;
+      background: linear-gradient(to top left,
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255,0,0,0) calc(50% - 0.8px),
+      rgba(255,0,0,1) 50%,
+      rgba(255,0,0,0) calc(50% + 0.8px),
+      rgba(255,0,0,0) 100%),
+        linear-gradient(to top right,
+      rgba(255,0,0,0) 0%,
+      rgba(255,0,0,0) calc(50% - 0.8px),
+      rgba(255,0,0,1) 50%,
+      rgba(255,0,0,0) calc(50% + 0.8px),
+      rgba(255,0,0,0) 100%);
+    }
+  }
+
+  &__new-price {
+    font-size: 14px;
+    color: #30302f;
+    margin: 0;
+    position: absolute;
+    top: 0;
+
+    &--currency {
+      font-size: 16px;
+      color: #36bde3;
+    }
+
+    &--value {
+      font-size: 44px;
+      font-weight: 700;
+      color: #36bde3;
+    }
+  }
+}
