@@ -171,7 +171,8 @@
   @media (max-width: 840px) {
     .card {
       position: initial;
-      margin: 40px auto; } }
+      margin: 40px auto;
+      max-width: 390px; } }
   @media (max-width: 520px) {
     .card {
       margin: 30px auto; } }
@@ -232,6 +233,8 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   opacity: 0.9; }
+  .button--header {
+    width: 100%; }
   .button__text {
     font-size: 20px;
     font-weight: 500;
@@ -418,7 +421,7 @@
       .composition__list {
         display: grid;
         grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 840px) {
+    @media (max-width: 520px) {
       .composition__list {
         grid-template-columns: 1fr;
         justify-items: center; } }
