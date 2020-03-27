@@ -14,6 +14,7 @@
   @media (max-width: $medium-screen-break-point) {
     position: initial;
     margin: 40px auto;
+    max-width: 390px;
   }
 
   @media (max-width: $small-screen-break-point) {

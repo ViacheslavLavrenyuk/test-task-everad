@@ -212,6 +212,7 @@
   .card {
     position: initial;
     margin: 40px auto;
+    max-width: 390px;
   }
 }
 @media (max-width: 520px) {
@@ -285,6 +286,9 @@
   background: linear-gradient(180deg, #21a2e2 46%, #3abde3 100%);
   transition: 0.2s;
   opacity: 0.9;
+}
+.button--header {
+  width: 100%;
 }
 .button__text {
   font-size: 20px;
@@ -539,7 +543,7 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 520px) {
   .composition__list {
     grid-template-columns: 1fr;
     justify-items: center;

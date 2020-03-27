@@ -10,6 +10,10 @@
   transition: $hover-duration;
   opacity: 0.9;
 
+  &--header {
+    width: 100%;
+  }
+
   &__text {
     font-size: 20px;
     font-weight: 500;
